@@ -12,8 +12,9 @@ const fakeRequest = (url) => {
 };
 
 fakeRequest("/dogs/1")
-  .then(() => {
+  .then((data) => {
     console.log("Done with request!");
+    console.log("data is:", data);
   })
   .catch((err) => {
     console.log("Error!", err);
